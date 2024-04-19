@@ -6,7 +6,10 @@
           <view
             class="i-material-symbols-arrow-back-ios-rounded text-white text-60rpx ml-32rpx"
           ></view>
-          <view class="bg-#00000033 flex items-center rounded-999">
+          <view
+            class="bg-#00000033 flex items-center rounded-999"
+            @click="onOpenHome"
+          >
             <image
               src="/static/avatar.jpg"
               class="rounded-999 w-80rpx h-80rpx ml-8rpx my-8rpx"
@@ -85,21 +88,18 @@
           class="h-80rpx flex-1 flex items-center justify-between rounded-999 bg-#00000066"
         >
           <text class="text-#ddd ml-16rpx">等你发弹幕 ~ </text>
-          <image src="/static/smile.png" class="w-60rpx h-60rpx mr-10rpx"></image>
+          <image
+            src="/static/smile.png"
+            class="w-60rpx h-60rpx mr-10rpx"
+          ></image>
         </view>
-        <view
-          class="w-80rpx h-80rpx rounded-999 bg-#00000066 flex-center"
-        >
+        <view class="w-80rpx h-80rpx rounded-999 bg-#00000066 flex-center">
           <image src="/static/message.png" class="w-46rpx h-46rpx"></image>
         </view>
-        <view
-          class="w-80rpx h-80rpx rounded-999 bg-#00000066 flex-center"
-        >
+        <view class="w-80rpx h-80rpx rounded-999 bg-#00000066 flex-center">
           <image src="/static/rose.png" class="w-46rpx h-46rpx"></image>
         </view>
-        <view
-          class="w-80rpx h-80rpx rounded-999 bg-#00000066 flex-center"
-        >
+        <view class="w-80rpx h-80rpx rounded-999 bg-#00000066 flex-center">
           <image src="/static/gift.png" class="w-46rpx h-46rpx"></image>
         </view>
       </view>
@@ -108,6 +108,9 @@
 </template>
 
 <script setup lang="ts">
+const onOpenHome = () => {
+  window.open('https://space.bilibili.com/34283559')
+}
 </script>
 
 <style scoped></style>
