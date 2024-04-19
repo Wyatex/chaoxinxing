@@ -109,7 +109,7 @@
 
 <script setup lang="ts">
 const onOpenHome = () => {
-  window.open('https://space.bilibili.com/34283559')
+  window.location.href = 'https://space.bilibili.com/1998383382'
 }
 </script>
 
